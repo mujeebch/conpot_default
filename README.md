@@ -25,7 +25,7 @@ You can find instructions on how to install conpot [here](https://conpot.readthe
 
 ## Updated by Mujeeb
 
-This project is courtesy of mushorg. We have updated for production. Major change is:
+This project is courtesy of mushorg. We have updated for production. Major changes are:
 
 * Modified Dockerfile
 * Use of Authbind to use ports < 1024
