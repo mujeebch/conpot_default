@@ -23,3 +23,9 @@ suggest that you go for [quick install](https://conpot.readthedocs.io/en/latest/
 If you want to tinker around and write your own template, change ports etc. We suggest that you do host install.
 You can find instructions on how to install conpot [here](https://conpot.readthedocs.io/en/latest/installation/install.html) and the FAQ [here](https://conpot.readthedocs.io/en/latest/faq.html).
 
+## Updated by Mujeeb
+
+This project is courtesy of mushorg. We have updated for production. Major change is:
+
+* Modified Dockerfile
+* Use of Authbind to use ports < 1024
