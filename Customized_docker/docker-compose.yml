@@ -10,7 +10,7 @@ services:
     container_name: conpot_default_original
     networks:
       iot:
-        ipv4_address: 10.0.96.90
+        ipv4_address: x.x.x.x
     build: ./
     ports:
      - "80:80" #SCADA UI, http
