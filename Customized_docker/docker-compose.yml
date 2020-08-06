@@ -1,0 +1,26 @@
+version: "2"
+
+networks:
+  iot: 
+    external:
+      name: iot-bridge
+
+services:
+  conpot_default_original:
+    container_name: conpot_default_original
+    networks:
+      iot:
+        ipv4_address: 10.0.96.90
+    build: ./
+    ports:
+     - "80:80" #SCADA UI, http
+     - "102:102" #S7Comm
+     - "502:502" #Modbus
+     - "161:161/udp" #SNMP
+     - "47808:47808/udp" #Bacnet
+#     - "623:623/udp" #IPMI
+     - "21:21" #FTP
+     - "69:69/udp" #TFTP
+     - "44818:44818" #EN/IP
+    restart: always
+
